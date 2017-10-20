@@ -393,4 +393,11 @@
             </build>
         </profile>
     </profiles>
+
+    <scm>
+        <url>https://github.com/floragunncom/search-guard-parent</url>
+        <connection>scm:git:git@github.com:floragunncom/search-guard-parent.git</connection>
+        <developerConnection>scm:git:git@github.com:floragunncom/search-guard-parent.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 </project>
