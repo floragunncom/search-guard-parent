@@ -11,7 +11,8 @@
   ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the Apache License Version 2.0 for the specific language governing permissions and limitations there under.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.floragunn</groupId>
@@ -26,11 +27,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <!--
-        <sonar.junit.reportPaths>${project.basedir}/../target/jacoco.exec</sonar.junit.reportPaths>
-        <sonar.jacoco.reportPaths>${project.basedir}/../target/jacoco-it.exec</sonar.jacoco.reportPaths>
-        -->
-        <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
+        <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/
+        </sonatypeOssDistMgmtSnapshotsUrl>
         <dependency.locations.enabled>false</dependency.locations.enabled>
     </properties>
 
@@ -121,6 +119,18 @@
                 </includes>
             </testResource>
         </testResources>
+        <resources>
+            <resource>
+                <directory>${basedir}</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>LICENSE</include>
+                    <include>NOTICE.txt</include>
+                    <include>THIRD-PARTY.txt</include>
+                    <include>KEYS</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -184,8 +194,6 @@
                         <goals>
                             <goal>validateRevision</goal>
                         </goals>
-                        <!-- *NOTE*: The default phase of validateRevision is verify, but
-                          in case you want to change it, you can do so by adding the phase here -->
                         <phase>package</phase>
                     </execution>
                 </executions>
