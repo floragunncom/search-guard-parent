@@ -11,13 +11,12 @@
   ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the Apache License Version 2.0 for the specific language governing permissions and limitations there under.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.floragunn</groupId>
     <artifactId>search-guard-parent</artifactId>
-    <version>6.1-beta5-SNAPSHOT</version>
+    <version>6.1-beta5</version>
     <packaging>pom</packaging>
 
     <name>Search Guard Parent</name>
@@ -410,6 +409,6 @@
         <url>https://github.com/floragunncom/search-guard-parent</url>
         <connection>scm:git:git@github.com:floragunncom/search-guard-parent.git</connection>
         <developerConnection>scm:git:git@github.com:floragunncom/search-guard-parent.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ves-6.1-beta5</tag>
     </scm>
 </project>
