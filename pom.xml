@@ -16,7 +16,7 @@
 
     <groupId>com.floragunn</groupId>
     <artifactId>search-guard-parent</artifactId>
-    <version>6.21.1-SNAPSHOT</version>
+    <version>6.22.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Search Guard Parent</name>
@@ -134,7 +134,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>1.4.1</version>
+                <version>3.0.0-M2</version>
                 <executions>
                     <execution>
                         <id>enforce-maven</id>
@@ -144,8 +144,8 @@
                         <configuration>
                             <rules>
                                 <requireMavenVersion>
-                                    <version>[3.1.0,)</version>
-                                    <message>Maven 3.1.0 or later required</message>
+                                    <version>[3.3.3,)</version>
+                                    <message>Maven 3.3.3 or later required</message>
                                 </requireMavenVersion>
                             </rules>
                         </configuration>
@@ -158,8 +158,8 @@
                         <configuration>
                             <rules>
                                 <requireJavaVersion>
-                                    <version>1.8</version>
-                                    <message>Java 1.8 required</message>
+                                    <version>[1.8,)</version>
+                                    <message>Java 1.8 or later required</message>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>
@@ -168,7 +168,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.0</version>
                 <configuration>
                     <filesets>
                         <fileset>
@@ -211,7 +211,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.0.2</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -242,11 +242,11 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.10.4</version>
+                    <version>3.0.1</version>
                     <configuration>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <locale>en</locale>
-                        <additionalparam>-Xdoclint:none</additionalparam>
+                        <doclint>none</doclint>
                     </configuration>
                     <executions>
                         <execution>
@@ -281,7 +281,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.0.2</version>
+                    <version>3.1.0</version>
                     <configuration>
                         <excludes>
                             <exclude>**/*cobertura*</exclude>
@@ -309,7 +309,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.7.0</version>
+                    <version>3.8.0</version>
                     <configuration>
                         <source>1.8</source>
                         <target>1.8</target>
@@ -321,7 +321,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.20.1</version>
+                    <version>2.22.0</version>
                     <configuration>
                         <includes>
                             <include>**/*Test*.java</include>
@@ -331,7 +331,7 @@
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.7.9</version>
+                    <version>0.8.2</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-assembly-plugin</artifactId>
