@@ -46,6 +46,16 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>elasticsearch-releases</id>
+            <url>https://artifacts.elastic.co/maven</url>
+            <releases>
+              <enabled>true</enabled>
+            </releases>
+            <snapshots>
+              <enabled>true</enabled>
+            </snapshots>
+        </repository>
     </repositories>
 
     <distributionManagement>
@@ -187,7 +197,7 @@
                     </filesets>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
                 <version>2.2.6</version>
@@ -214,7 +224,7 @@
                         <excludeProperty>git.build.user.*</excludeProperty>
                     </excludeProperties>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
         <pluginManagement>
             <plugins>
