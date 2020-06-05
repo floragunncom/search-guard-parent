@@ -16,7 +16,7 @@
 
     <groupId>com.floragunn</groupId>
     <artifactId>search-guard-parent</artifactId>
-    <version>6.22.2-SNAPSHOT</version>
+    <version>6.22.2</version>
     <packaging>pom</packaging>
 
     <name>Search Guard Parent</name>
@@ -410,6 +410,6 @@
         <url>https://github.com/floragunncom/search-guard-parent</url>
         <connection>scm:git:git@github.com:floragunncom/search-guard-parent.git</connection>
         <developerConnection>scm:git:git@github.com:floragunncom/search-guard-parent.git</developerConnection>
-        <tag>v6.22.1</tag>
+        <tag>v6.22.2</tag>
     </scm>
 </project>
