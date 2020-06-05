@@ -16,7 +16,7 @@
 
     <groupId>com.floragunn</groupId>
     <artifactId>search-guard-parent</artifactId>
-    <version>6.22.1</version>
+    <version>6.22.2</version>
     <packaging>pom</packaging>
 
     <name>Search Guard Parent</name>
@@ -247,6 +247,7 @@
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <locale>en</locale>
                         <doclint>none</doclint>
+                        <detectJavaApiLink>false</detectJavaApiLink>
                     </configuration>
                     <executions>
                         <execution>
